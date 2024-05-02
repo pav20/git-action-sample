@@ -1,0 +1,14 @@
+name: First Workflow
+# condition on when it should work
+# workflow_dispatch- manual trigger
+on: workflow_dispatch
+jobs:
+  first-job:
+  #environment to run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print First
+      #executed in command line
+        run: echo "Hello First"
+      - name: Print Second
+        run: echo "Hello second"
